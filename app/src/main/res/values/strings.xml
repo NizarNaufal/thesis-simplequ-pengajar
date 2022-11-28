@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">thesis</string>
+    <string name="str_create_account">Buat Akun</string>
+    <string name="str_create_profile">Buat Profil</string>
+    <string name="label_email">Email</string>
+    <string name="hint_sample_email">Email atau Nomor Whatsapp</string>
+    <string name="hint_sample_name">Nama Lengkap</string>
+    <string name="hint_sample_lembaga">Nama Lembaga</string>
+    <string name="hint_statik_lembaga">Nomor Statistik Lembaga</string>
+    <string name="masuk">Assalamu’alaikum.</string>
+    <string name="hint_sample_generate_email">Silahkan gunakan e-mail dan nomor telepon yang aktif</string>
+    <string name="label_password">Password</string>
+    <string name="str_terms_conditions">Dengan melanjutkan, saya setuju dengan syarat dan ketentuan dari Badko dibawah ini. Syarat dan ketentuan</string>
+    <string name="label_no_static">1.Masukkan 12 nomor statistik sesuap di aplikasi emis\n2.Kosongkan Isian apabila Lembaga belum terdaftar</string>
+    <string name="str_description">Asatidz hebat, kualitas pengajaran al-quran\nmeningkat</string>
+    <string name="atau">Atau</string>
+    <string name="forgot">Lupa Password</string>
+    <string name="tab_title_home">Beranda</string>
+    <string name="tab_title_class">Kelas</string>
+    <string name="tab_title_form">Forum</string>
+    <string name="tab_title_etc">Lainnya</string>
+    <string name="label_forum">Forum</string>
+    <string name="title_forum">Forum</string>
+    <string name="str_choose_jilid">Pilih Jilid</string>
+    <string name="str_choose_halaman">Pilih Halaman</string>
+    <string name="label_keterangan">Keterangan</string>
+    <string name="defaultEmpty">Name Santri</string>
+    <string name="str_login">Login</string>
+    <string name="str_email_input">Masukkan kode yang kami kirim melalui email %1$s</string>
+    <string name="err_password">Password minimal terdiri dari 6 karakter </string>
+    <string name="err_confirm_password">Password tidak sesuai</string>
+
+    <string-array name="questions">
+        <item>Jilid 1</item>
+        <item>Jilid 2</item>
+        <item>Jilid 3</item>
+        <item>Jilid 4</item>
+        <item>Jilid 5</item>
+    </string-array>
+
+    <string-array name="questions_two">
+        <item>Iqro</item>
+    </string-array>
+</resources>

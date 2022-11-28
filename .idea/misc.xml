@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/telkom-nizar/AndroidStudioProjects/thesis/app/src/main/res/drawable/bg_border_radius.xml" value="0.207" />
+        <entry key="..\:/Users/telkom-nizar/AndroidStudioProjects/thesis/app/src/main/res/drawable/bg_border_radius_green.xml" value="0.207" />
+        <entry key="..\:/Users/telkom-nizar/AndroidStudioProjects/thesis/app/src/main/res/drawable/bg_btn_edit.xml" value="0.1635" />
+        <entry key="..\:/Users/telkom-nizar/AndroidStudioProjects/thesis/app/src/main/res/drawable/bg_card_white.xml" value="0.207" />
+        <entry key="..\:/Users/telkom-nizar/AndroidStudioProjects/thesis/app/src/main/res/drawable/bg_detail_santri.xml" value="0.1635" />
+        <entry key="..\:/Users/telkom-nizar/AndroidStudioProjects/thesis/app/src/main/res/drawable/bg_prestasi_santri.xml" value="0.1635" />
+        <entry key="..\:/Users/telkom-nizar/AndroidStudioProjects/thesis/app/src/main/res/drawable/bg_radius_green.xml" value="0.1635" />
+        <entry key="..\:/Users/telkom-nizar/AndroidStudioProjects/thesis/app/src/main/res/drawable/bg_radius_green_border.xml" value="0.1635" />
+        <entry key="..\:/Users/telkom-nizar/AndroidStudioProjects/thesis/app/src/main/res/drawable/bg_radius_white.xml" value="0.207" />
+        <entry key="..\:/Users/telkom-nizar/AndroidStudioProjects/thesis/app/src/main/res/drawable/bg_round_green.xml" value="0.207" />
+        <entry key="..\:/Users/telkom-nizar/AndroidStudioProjects/thesis/app/src/main/res/drawable/bg_round_spinner.xml" value="0.207" />
+        <entry key="..\:/Users/telkom-nizar/AndroidStudioProjects/thesis/app/src/main/res/drawable/bg_santri_anda.xml" value="0.207" />
+        <entry key="..\:/Users/telkom-nizar/AndroidStudioProjects/thesis/app/src/main/res/drawable/bg_transparent.xml" value="0.207" />
+        <entry key="..\:/Users/telkom-nizar/AndroidStudioProjects/thesis/app/src/main/res/drawable/bg_transparent_green.xml" value="0.207" />
+        <entry key="..\:/Users/telkom-nizar/AndroidStudioProjects/thesis/app/src/main/res/drawable/btn_disabled.xml" value="0.207" />
+        <entry key="..\:/Users/telkom-nizar/AndroidStudioProjects/thesis/app/src/main/res/drawable/btn_enabled.xml" value="0.207" />
+        <entry key="..\:/Users/telkom-nizar/AndroidStudioProjects/thesis/app/src/main/res/drawable/ic_access_wa.xml" value="0.1635" />
+        <entry key="..\:/Users/telkom-nizar/AndroidStudioProjects/thesis/app/src/main/res/drawable/ic_actionbar_arrow_back.xml" value="0.207" />
+        <entry key="..\:/Users/telkom-nizar/AndroidStudioProjects/thesis/app/src/main/res/drawable/ic_address.xml" value="0.1635" />
+        <entry key="..\:/Users/telkom-nizar/AndroidStudioProjects/thesis/app/src/main/res/drawable/ic_arrow_back.xml" value="0.207" />
+        <entry key="..\:/Users/telkom-nizar/AndroidStudioProjects/thesis/app/src/main/res/drawable/ic_checklist.xml" value="0.1635" />
+        <entry key="..\:/Users/telkom-nizar/AndroidStudioProjects/thesis/app/src/main/res/drawable/ic_class.xml" value="0.207" />
+        <entry key="..\:/Users/telkom-nizar/AndroidStudioProjects/thesis/app/src/main/res/drawable/ic_close.xml" value="0.207" />
+        <entry key="..\:/Users/telkom-nizar/AndroidStudioProjects/thesis/app/src/main/res/drawable/ic_etc.xml" value="0.207" />
+        <entry key="..\:/Users/telkom-nizar/AndroidStudioProjects/thesis/app/src/main/res/drawable/ic_form.xml" value="0.207" />
+        <entry key="..\:/Users/telkom-nizar/AndroidStudioProjects/thesis/app/src/main/res/drawable/ic_hamburger.xml" value="0.207" />
+        <entry key="..\:/Users/telkom-nizar/AndroidStudioProjects/thesis/app/src/main/res/drawable/ic_home.xml" value="0.207" />
+        <entry key="..\:/Users/telkom-nizar/AndroidStudioProjects/thesis/app/src/main/res/drawable/ic_ic.xml" value="0.207" />
+        <entry key="..\:/Users/telkom-nizar/AndroidStudioProjects/thesis/app/src/main/res/drawable/ic_info_outline.xml" value="0.207" />
+        <entry key="..\:/Users/telkom-nizar/AndroidStudioProjects/thesis/app/src/main/res/drawable/ic_lembaga.xml" value="0.1635" />
+        <entry key="..\:/Users/telkom-nizar/AndroidStudioProjects/thesis/app/src/main/res/drawable/ic_metode_pembeljaran.xml" value="0.1635" />
+        <entry key="..\:/Users/telkom-nizar/AndroidStudioProjects/thesis/app/src/main/res/drawable/ic_next.xml" value="0.207" />
+        <entry key="..\:/Users/telkom-nizar/AndroidStudioProjects/thesis/app/src/main/res/drawable/ic_password.xml" value="0.1635" />
+        <entry key="..\:/Users/telkom-nizar/AndroidStudioProjects/thesis/app/src/main/res/drawable/ic_person_lembaga.xml" value="0.1635" />
+        <entry key="..\:/Users/telkom-nizar/AndroidStudioProjects/thesis/app/src/main/res/drawable/ic_phone.xml" value="0.1635" />
+        <entry key="..\:/Users/telkom-nizar/AndroidStudioProjects/thesis/app/src/main/res/drawable/ic_position.xml" value="0.1635" />
+        <entry key="..\:/Users/telkom-nizar/AndroidStudioProjects/thesis/app/src/main/res/drawable/ic_search.xml" value="0.207" />
+        <entry key="..\:/Users/telkom-nizar/AndroidStudioProjects/thesis/app/src/main/res/drawable/ic_static.xml" value="0.1635" />
+        <entry key="..\:/Users/telkom-nizar/AndroidStudioProjects/thesis/app/src/main/res/drawable/ic_status_naik.xml" value="0.207" />
+        <entry key="..\:/Users/telkom-nizar/AndroidStudioProjects/thesis/app/src/main/res/drawable/ic_status_ulang.xml" value="0.207" />
+        <entry key="..\:/Users/telkom-nizar/AndroidStudioProjects/thesis/app/src/main/res/drawable/ic_stepper.xml" value="0.1635" />
+        <entry key="..\:/Users/telkom-nizar/AndroidStudioProjects/thesis/app/src/main/res/drawable/ic_stepper_three.xml" value="0.1635" />
+        <entry key="..\:/Users/telkom-nizar/AndroidStudioProjects/thesis/app/src/main/res/drawable/ic_stepper_two.xml" value="0.1635" />
+        <entry key="..\:/Users/telkom-nizar/AndroidStudioProjects/thesis/app/src/main/res/drawable/ic_success.xml" value="0.1635" />
+        <entry key="..\:/Users/telkom-nizar/AndroidStudioProjects/thesis/app/src/main/res/drawable/ic_success_create_account.xml" value="0.1635" />
+        <entry key="..\:/Users/telkom-nizar/AndroidStudioProjects/thesis/app/src/main/res/drawable/ic_thumbnail.xml" value="0.207" />
+        <entry key="..\:/Users/telkom-nizar/AndroidStudioProjects/thesis/app/src/main/res/drawable/ic_trash.xml" value="0.1635" />
+        <entry key="..\:/Users/telkom-nizar/AndroidStudioProjects/thesis/app/src/main/res/drawable/ic_vector_round.xml" value="0.207" />
+        <entry key="..\:/Users/telkom-nizar/AndroidStudioProjects/thesis/app/src/main/res/drawable/selector_bg_tab.xml" value="0.207" />
+        <entry key="..\:/Users/telkom-nizar/AndroidStudioProjects/thesis/app/src/main/res/drawable/tab_background_selected.xml" value="0.207" />
+        <entry key="..\:/Users/telkom-nizar/AndroidStudioProjects/thesis/app/src/main/res/drawable/tab_background_unselected.xml" value="0.207" />
+        <entry key="..\:/Users/telkom-nizar/AndroidStudioProjects/thesis/app/src/main/res/layout/activity_add_pengajar.xml" value="0.20521590423257802" />
+        <entry key="..\:/Users/telkom-nizar/AndroidStudioProjects/thesis/app/src/main/res/layout/activity_add_santri.xml" value="0.20521590423257802" />
+        <entry key="..\:/Users/telkom-nizar/AndroidStudioProjects/thesis/app/src/main/res/layout/activity_create_password.xml" value="0.25" />
+        <entry key="..\:/Users/telkom-nizar/AndroidStudioProjects/thesis/app/src/main/res/layout/activity_detail_pengajar.xml" value="0.20512820512820512" />
+        <entry key="..\:/Users/telkom-nizar/AndroidStudioProjects/thesis/app/src/main/res/layout/activity_detail_santri.xml" value="0.20436083796494228" />
+        <entry key="..\:/Users/telkom-nizar/AndroidStudioProjects/thesis/app/src/main/res/layout/activity_edit_pengajar.xml" value="0.20521590423257802" />
+        <entry key="..\:/Users/telkom-nizar/AndroidStudioProjects/thesis/app/src/main/res/layout/activity_edit_santri.xml" value="0.20521590423257802" />
+        <entry key="..\:/Users/telkom-nizar/AndroidStudioProjects/thesis/app/src/main/res/layout/activity_first_page.xml" value="0.20521590423257802" />
+        <entry key="..\:/Users/telkom-nizar/AndroidStudioProjects/thesis/app/src/main/res/layout/activity_list_pengajar.xml" value="0.20436083796494228" />
+        <entry key="..\:/Users/telkom-nizar/AndroidStudioProjects/thesis/app/src/main/res/layout/activity_login.xml" value="0.16681776971894832" />
+        <entry key="..\:/Users/telkom-nizar/AndroidStudioProjects/thesis/app/src/main/res/layout/activity_main.xml" value="0.20521590423257802" />
+        <entry key="..\:/Users/telkom-nizar/AndroidStudioProjects/thesis/app/src/main/res/layout/activity_next_step_santri.xml" value="0.2" />
+        <entry key="..\:/Users/telkom-nizar/AndroidStudioProjects/thesis/app/src/main/res/layout/activity_otp.xml" value="0.2" />
+        <entry key="..\:/Users/telkom-nizar/AndroidStudioProjects/thesis/app/src/main/res/layout/activity_pilih_santri.xml" value="0.20436083796494228" />
+        <entry key="..\:/Users/telkom-nizar/AndroidStudioProjects/thesis/app/src/main/res/layout/activity_prestasi_santri.xml" value="0.20521590423257802" />
+        <entry key="..\:/Users/telkom-nizar/AndroidStudioProjects/thesis/app/src/main/res/layout/activity_register.xml" value="0.2" />
+        <entry key="..\:/Users/telkom-nizar/AndroidStudioProjects/thesis/app/src/main/res/layout/activity_splash.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/telkom-nizar/AndroidStudioProjects/thesis/app/src/main/res/layout/activity_success_create_account.xml" value="0.20436083796494228" />
+        <entry key="..\:/Users/telkom-nizar/AndroidStudioProjects/thesis/app/src/main/res/layout/dialog_confirm_data.xml" value="0.20436083796494228" />
+        <entry key="..\:/Users/telkom-nizar/AndroidStudioProjects/thesis/app/src/main/res/layout/dialog_delete_pengajar.xml" value="0.1875" />
+        <entry key="..\:/Users/telkom-nizar/AndroidStudioProjects/thesis/app/src/main/res/layout/dialog_lembaga_not_found.xml" value="0.264" />
+        <entry key="..\:/Users/telkom-nizar/AndroidStudioProjects/thesis/app/src/main/res/layout/dialog_success_add_pengajar.xml" value="0.20436083796494228" />
+        <entry key="..\:/Users/telkom-nizar/AndroidStudioProjects/thesis/app/src/main/res/layout/fragment_activity_santri.xml" value="0.264" />
+        <entry key="..\:/Users/telkom-nizar/AndroidStudioProjects/thesis/app/src/main/res/layout/fragment_class.xml" value="0.20436083796494228" />
+        <entry key="..\:/Users/telkom-nizar/AndroidStudioProjects/thesis/app/src/main/res/layout/fragment_detail_profile_pengajar.xml" value="0.20521590423257802" />
+        <entry key="..\:/Users/telkom-nizar/AndroidStudioProjects/thesis/app/src/main/res/layout/fragment_detail_profile_santri.xml" value="0.20436083796494228" />
+        <entry key="..\:/Users/telkom-nizar/AndroidStudioProjects/thesis/app/src/main/res/layout/fragment_forum.xml" value="0.20521590423257802" />
+        <entry key="..\:/Users/telkom-nizar/AndroidStudioProjects/thesis/app/src/main/res/layout/fragment_home.xml" value="0.2" />
+        <entry key="..\:/Users/telkom-nizar/AndroidStudioProjects/thesis/app/src/main/res/layout/fragment_lainnya.xml" value="0.20521590423257802" />
+        <entry key="..\:/Users/telkom-nizar/AndroidStudioProjects/thesis/app/src/main/res/layout/item_list_santri.xml" value="0.1721311475409836" />
+        <entry key="..\:/Users/telkom-nizar/AndroidStudioProjects/thesis/app/src/main/res/layout/item_santri.xml" value="0.20436083796494228" />
+        <entry key="..\:/Users/telkom-nizar/AndroidStudioProjects/thesis/app/src/main/res/menu/bottom_nav_menu.xml" value="0.20521590423257802" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

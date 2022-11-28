@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#FAFAFA">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarVerification"
+        style="@style/ActionBar"
+        android:layout_width="0dp"
+        android:layout_height="?attr/actionBarSize"
+        android:elevation="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="Ubah Santri"
+        app:titleMarginStart="@dimen/_12sdp"
+        app:navigationIcon="@drawable/ic_actionbar_arrow_back" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/btnVerifyConfirm"
+        app:layout_constraintTop_toBottomOf="@+id/toolbarVerification">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/clSearch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@color/white"
+                android:paddingBottom="@dimen/_10sdp"
+                app:layout_constraintTop_toTopOf="parent">
+                <TextView
+                    android:id="@+id/tvInformationAccount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="@dimen/_15sdp"
+                    android:layout_marginStart="@dimen/_12sdp"
+                    android:gravity="center"
+                    android:text="Data Santri"
+                    android:textColor="@color/colorGreyScale100"
+                    android:textSize="@dimen/_13ssp"
+                    android:fontFamily="@font/nunito_sans"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+                <View
+                    android:id="@+id/vLine"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:paddingTop="@dimen/_10sdp"
+                    android:background="@color/colorBlack5"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tvInformationAccount" />
+                <TextView
+                    android:id="@+id/tvNomorInduk"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="@dimen/_12sdp"
+                    android:layout_marginStart="@dimen/_12sdp"
+                    android:gravity="center"
+                    android:text="Nama Santri"
+                    android:textColor="@color/colorGreyScale100"
+                    android:textSize="@dimen/_12ssp"
+                    android:fontFamily="@font/nunito_sans"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/vLine" />
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tlNomorInduk"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_12sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    app:hintEnabled="false"
+                    app:layout_constraintTop_toBottomOf="@+id/tvNomorInduk"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etKeterangan"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Masukkan Nama Santri"
+                        android:imeOptions="actionDone"
+                        android:inputType="text"
+                        android:text="Aiman Nabeel Akbar"
+                        android:selectAllOnFocus="false"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/colorDarkGray2"
+                        android:textSize="@dimen/text_size_small"
+                        android:textStyle="bold" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    android:id="@+id/tvNomorTelepon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="@dimen/_12sdp"
+                    android:layout_marginStart="@dimen/_12sdp"
+                    android:gravity="center"
+                    android:text="Nomor Induk Kependudukan (NIK)"
+                    android:textColor="@color/colorGreyScale100"
+                    android:textSize="@dimen/_12ssp"
+                    android:fontFamily="@font/nunito_sans"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tlNomorInduk" />
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tlNomorTelepon"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_12sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    app:hintEnabled="false"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    app:layout_constraintTop_toBottomOf="@+id/tvNomorTelepon"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etNomorTelepon"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Masukkan Nomor Induk Kependudukan (NIK)"
+                        android:imeOptions="actionDone"
+                        android:text="3258954501000001"
+                        android:inputType="text"
+                        android:selectAllOnFocus="false"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/colorDarkGray2"
+                        android:textSize="@dimen/text_size_small"
+                        android:textStyle="bold" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <TextView
+                    android:id="@+id/tvEmail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="@dimen/_12sdp"
+                    android:layout_marginStart="@dimen/_12sdp"
+                    android:gravity="center"
+                    android:text="Tempat Lahir"
+                    android:textColor="@color/colorGreyScale100"
+                    android:textSize="@dimen/_12ssp"
+                    android:fontFamily="@font/nunito_sans"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tlNomorTelepon" />
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tlEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_12sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    app:hintEnabled="false"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    app:layout_constraintTop_toBottomOf="@+id/tvEmail"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etEmail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Masukkan tempat lahir"
+                        android:imeOptions="actionDone"
+                        android:inputType="text"
+                        android:text="Bandung"
+                        android:selectAllOnFocus="false"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/colorDarkGray2"
+                        android:textSize="@dimen/text_size_small"
+                        android:textStyle="bold" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <TextView
+                    android:id="@+id/tvPassword"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="@dimen/_12sdp"
+                    android:layout_marginStart="@dimen/_12sdp"
+                    android:gravity="center"
+                    android:text="Tanggal Lahir"
+                    android:textColor="@color/colorGreyScale100"
+                    android:textSize="@dimen/_12ssp"
+                    android:fontFamily="@font/nunito_sans"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tlEmail" />
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tlPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_12sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    app:hintEnabled="false"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    app:passwordToggleEnabled="true"
+                    app:layout_constraintTop_toBottomOf="@+id/tvPassword"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etPassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Masukkan tanggal lahir"
+                        android:imeOptions="actionDone"
+                        android:inputType="text"
+                        android:text="01/05/2008"
+                        android:selectAllOnFocus="false"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/colorDarkGray2"
+                        android:textSize="@dimen/text_size_small"
+                        android:textStyle="bold" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/clSearchPengajar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@color/white"
+                app:layout_constraintTop_toBottomOf="@+id/clSearch">
+                <TextView
+                    android:id="@+id/tvInformationPengajar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="@dimen/_15sdp"
+                    android:layout_marginStart="@dimen/_12sdp"
+                    android:gravity="center"
+                    android:text="Data Wali Santri"
+                    android:textColor="@color/colorGreyScale100"
+                    android:textSize="@dimen/_13ssp"
+                    android:fontFamily="@font/nunito_sans"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+                <View
+                    android:id="@+id/vLinePengajar"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:paddingTop="@dimen/_10sdp"
+                    android:background="@color/colorBlack5"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tvInformationPengajar" />
+                <TextView
+                    android:id="@+id/tvNamaPengajar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="@dimen/_12sdp"
+                    android:layout_marginStart="@dimen/_12sdp"
+                    android:gravity="center"
+                    android:text="Nama Ayah"
+                    android:textColor="@color/colorGreyScale100"
+                    android:textSize="@dimen/_12ssp"
+                    android:fontFamily="@font/nunito_sans"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/vLinePengajar" />
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tlNamaPengajar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_12sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    app:hintEnabled="false"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    app:layout_constraintTop_toBottomOf="@+id/tvNamaPengajar"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etNamaPengajar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Masukkan Nama Ayah"
+                        android:imeOptions="actionDone"
+                        android:inputType="text"
+                        android:text="Zaidan Ajmal Satriono"
+                        android:selectAllOnFocus="false"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/colorDarkGray2"
+                        android:textSize="@dimen/text_size_small"
+                        android:textStyle="bold" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <TextView
+                    android:id="@+id/tvNomorIndukKependudukan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="@dimen/_12sdp"
+                    android:layout_marginStart="@dimen/_12sdp"
+                    android:gravity="center"
+                    android:text="Nomor Telepon"
+                    android:textColor="@color/colorGreyScale100"
+                    android:textSize="@dimen/_12ssp"
+                    android:fontFamily="@font/nunito_sans"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tlNamaPengajar" />
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tlNomorIndukKependudukan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_12sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    app:hintEnabled="false"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    app:layout_constraintTop_toBottomOf="@+id/tvNomorIndukKependudukan"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etNIK"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Masukkan Nomor Telepon"
+                        android:imeOptions="actionDone"
+                        android:inputType="text"
+                        android:text="082123456789"
+                        android:selectAllOnFocus="false"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/colorDarkGray2"
+                        android:textSize="@dimen/text_size_small"
+                        android:textStyle="bold" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <TextView
+                    android:id="@+id/tvTempatLahir"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="@dimen/_12sdp"
+                    android:layout_marginStart="@dimen/_12sdp"
+                    android:gravity="center"
+                    android:text="Pekerjaan"
+                    android:textColor="@color/colorGreyScale100"
+                    android:textSize="@dimen/_12ssp"
+                    android:fontFamily="@font/nunito_sans"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tlNomorIndukKependudukan" />
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tlTempatLahir"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_12sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    app:hintEnabled="false"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    app:layout_constraintTop_toBottomOf="@+id/tvTempatLahir"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etTempatLahir"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Masukkan Pekerjaan"
+                        android:imeOptions="actionDone"
+                        android:inputType="text"
+                        android:text="Dosen"
+                        android:selectAllOnFocus="false"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/colorDarkGray2"
+                        android:textSize="@dimen/text_size_small"
+                        android:textStyle="bold" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <TextView
+                    android:id="@+id/tvTanggalLahir"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="@dimen/_12sdp"
+                    android:layout_marginStart="@dimen/_12sdp"
+                    android:gravity="center"
+                    android:text="Alamat"
+                    android:textColor="@color/colorGreyScale100"
+                    android:textSize="@dimen/_12ssp"
+                    android:fontFamily="@font/nunito_sans"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tlTempatLahir" />
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tlTanggalLahir"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_12sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    app:hintEnabled="false"
+                    android:paddingBottom="@dimen/_10sdp"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    app:layout_constraintTop_toBottomOf="@+id/tvTanggalLahir"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etTanggalLahir"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Masukkan Alamat"
+                        android:imeOptions="actionDone"
+                        android:inputType="text"
+                        android:text="Sukaluyu No.34, Kota Bandung"
+                        android:selectAllOnFocus="false"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/colorDarkGray2"
+                        android:textSize="@dimen/text_size_small"
+                        android:textStyle="bold" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+    <Button
+        android:id="@+id/btnVerifyConfirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="@dimen/_13sdp"
+        android:background="@drawable/btn_enabled"
+        android:text="Simpan"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

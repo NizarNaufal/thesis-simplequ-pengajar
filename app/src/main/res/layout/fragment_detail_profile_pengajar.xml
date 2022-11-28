@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/clChange">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/clInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_marginEnd="@dimen/_12sdp"
+                android:paddingBottom="@dimen/_10sdp"
+                android:background="@drawable/bg_radius_white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+                <TextView
+                    android:id="@+id/tvToday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="@dimen/_10sdp"
+                    android:layout_marginStart="24dp"
+                    android:gravity="center"
+                    android:text="Informasi Akun"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_13ssp"
+                    android:fontFamily="@font/nunito_sans"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+                <TextView
+                    android:id="@+id/tvTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nomor Induk Pengajar"
+                    android:textColor="@color/colorGreyScale60"
+                    android:textSize="@dimen/_12ssp"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:fontFamily="@font/nunito_sans"
+                    android:layout_marginStart="@dimen/_18sdp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tvToday" />
+
+                <TextView
+                    android:id="@+id/tvIqra"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="54555736259107"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_13ssp"
+                    android:drawablePadding="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:fontFamily="@font/nunito_sans"
+                    android:layout_marginStart="23dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tvTime" />
+
+                <TextView
+                    android:id="@+id/tvNik"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nomor Telepon"
+                    android:textColor="@color/colorGreyScale60"
+                    android:textSize="@dimen/_12ssp"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:fontFamily="@font/nunito_sans"
+                    android:layout_marginStart="@dimen/_18sdp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tvIqra" />
+
+                <TextView
+                    android:id="@+id/tvNumberNik"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="082322332332"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_13ssp"
+                    android:drawablePadding="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:fontFamily="@font/nunito_sans"
+                    android:layout_marginStart="23dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tvNik" />
+                <TextView
+                    android:id="@+id/tvDateBorn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Email"
+                    android:textColor="@color/colorGreyScale60"
+                    android:textSize="@dimen/_12ssp"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:fontFamily="@font/nunito_sans"
+                    android:layout_marginStart="@dimen/_18sdp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tvNumberNik" />
+                <TextView
+                    android:id="@+id/tvAccess"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Akses"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:textColor="@color/colorGreyScale60"
+                    android:textSize="@dimen/_12ssp"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:fontFamily="@font/nunito_sans"
+                    android:layout_marginStart="@dimen/_18sdp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tvIqra" />
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/ivIconDriver"
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:src="@drawable/ic_access_wa"
+                    android:background="#0000ffff"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tvNik"/>
+                <TextView
+                    android:id="@+id/tvNumberDateBorn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="rafanalmanwinasis@gmail.com"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_13ssp"
+                    android:drawablePadding="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:fontFamily="@font/nunito_sans"
+                    android:layout_marginStart="23dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tvDateBorn" />
+
+                <TextView
+                    android:id="@+id/tvAge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Password"
+                    android:textColor="@color/colorGreyScale60"
+                    android:textSize="@dimen/_12ssp"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:fontFamily="@font/nunito_sans"
+                    android:layout_marginStart="@dimen/_18sdp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tvNumberDateBorn" />
+
+                <TextView
+                    android:id="@+id/tvNumberAge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="*******"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_13ssp"
+                    android:drawablePadding="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:fontFamily="@font/nunito_sans"
+                    android:layout_marginStart="23dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tvAge" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/clInfoWali"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_12sdp"
+                android:paddingBottom="@dimen/_10sdp"
+                android:background="@drawable/bg_radius_white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/clInfo">
+                <TextView
+                    android:id="@+id/tvDataWaliSantri"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="@dimen/_10sdp"
+                    android:layout_marginStart="24dp"
+                    android:gravity="center"
+                    android:text="Informasi Pengajar"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_13ssp"
+                    android:fontFamily="@font/nunito_sans"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+                <TextView
+                    android:id="@+id/tvDaddy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="NIK"
+                    android:textColor="@color/colorGreyScale60"
+                    android:textSize="@dimen/_12ssp"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:fontFamily="@font/nunito_sans"
+                    android:layout_marginStart="@dimen/_18sdp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tvDataWaliSantri" />
+
+                <TextView
+                    android:id="@+id/tvDaddyName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2508954502770001"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_13ssp"
+                    android:drawablePadding="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:fontFamily="@font/nunito_sans"
+                    android:layout_marginStart="23dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tvDaddy" />
+
+                <TextView
+                    android:id="@+id/tvNumberPhone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tempat Tanggal Lahir"
+                    android:textColor="@color/colorGreyScale60"
+                    android:textSize="@dimen/_12ssp"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:fontFamily="@font/nunito_sans"
+                    android:layout_marginStart="@dimen/_18sdp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tvDaddyName" />
+
+                <TextView
+                    android:id="@+id/tvNumberPhoneLocally"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bali, 2 Agustus 1987"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_13ssp"
+                    android:drawablePadding="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:fontFamily="@font/nunito_sans"
+                    android:layout_marginStart="23dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tvNumberPhone" />
+                <TextView
+                    android:id="@+id/tvWork"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Metode Pembelajaran"
+                    android:textColor="@color/colorGreyScale60"
+                    android:textSize="@dimen/_12ssp"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:fontFamily="@font/nunito_sans"
+                    android:layout_marginStart="@dimen/_18sdp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tvNumberPhoneLocally" />
+
+                <TextView
+                    android:id="@+id/tvWorkName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Iqro"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_13ssp"
+                    android:drawablePadding="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:fontFamily="@font/nunito_sans"
+                    android:layout_marginStart="23dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tvWork" />
+
+                <TextView
+                    android:id="@+id/tvAddress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Asal Universitas/Sekolah"
+                    android:textColor="@color/colorGreyScale60"
+                    android:textSize="@dimen/_12ssp"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:fontFamily="@font/nunito_sans"
+                    android:layout_marginStart="@dimen/_18sdp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tvWorkName" />
+
+                <TextView
+                    android:id="@+id/tvAddressName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Universitas Muhammadiyah Bandung"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_13ssp"
+                    android:drawablePadding="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:fontFamily="@font/nunito_sans"
+                    android:layout_marginStart="23dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tvAddress" />
+
+                <TextView
+                    android:id="@+id/tvProgram"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Program Studi"
+                    android:textColor="@color/colorGreyScale60"
+                    android:textSize="@dimen/_12ssp"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:fontFamily="@font/nunito_sans"
+                    android:layout_marginStart="@dimen/_18sdp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tvAddressName" />
+
+                <TextView
+                    android:id="@+id/tvProgramStudiName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Pendidikan Agama Islam"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_13ssp"
+                    android:drawablePadding="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:fontFamily="@font/nunito_sans"
+                    android:layout_marginStart="23dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tvProgram" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
