@@ -12,7 +12,7 @@
     <string name="label_password">Password</string>
     <string name="str_terms_conditions">Dengan melanjutkan, saya setuju dengan syarat dan ketentuan dari Badko dibawah ini. Syarat dan ketentuan</string>
     <string name="label_no_static">1.Masukkan 12 nomor statistik sesuap di aplikasi emis\n2.Kosongkan Isian apabila Lembaga belum terdaftar</string>
-    <string name="str_description">Asatidz hebat, kualitas pengajaran al-quran\nmeningkat</string>
+    <string name="str_description">Silahkan login dengan email atau nomor whatsapp yang terdaftar</string>
     <string name="atau">Atau</string>
     <string name="forgot">Lupa Password</string>
     <string name="tab_title_home">Beranda</string>
@@ -28,6 +28,7 @@
     <string name="str_login">Login</string>
     <string name="str_email_input">Masukkan kode yang kami kirim melalui email %1$s</string>
     <string name="err_password">Password minimal terdiri dari 6 karakter </string>
+    <string name="err_email">Email tidak sesuai</string>
     <string name="err_confirm_password">Password tidak sesuai</string>
 
     <string-array name="questions">

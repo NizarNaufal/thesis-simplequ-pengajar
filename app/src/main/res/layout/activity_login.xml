@@ -3,13 +3,24 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarVerification"
+        style="@style/ActionBar"
+        android:layout_width="0dp"
+        android:layout_height="?attr/actionBarSize"
+        android:elevation="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="Login"
+        app:titleMarginStart="@dimen/_12sdp"
+        app:navigationIcon="@drawable/ic_actionbar_arrow_back" />
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/clTopBar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/_15sdp"
-        app:layout_constraintTop_toTopOf="parent">
+        android:layout_marginTop="@dimen/_100sdp"
+        app:layout_constraintTop_toBottomOf="@+id/toolbarVerification">
 
         <ImageView
             android:id="@+id/ivBack"
@@ -36,14 +47,15 @@
             app:layout_constraintTop_toBottomOf="@id/ivBack" />
         <TextView
             android:id="@+id/tvLoginDescription"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/str_description"
+            android:text="Bismillah, login dan mulailah mengajar"
             android:textColor="@color/black"
             android:textSize="15sp"
             android:layout_marginTop="10dp"
             android:fontFamily="@font/nunito_sans"
             android:layout_marginStart="23dp"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/tvLogin" />
 
@@ -141,6 +153,7 @@
             android:backgroundTint="@color/green"
             android:background="@drawable/btn_enabled"
             android:text="@string/str_login"
+            android:enabled="false"
             android:textAllCaps="false"
             android:fontFamily="@font/nunito_sans"
             android:textColor="@color/colorLightGrey1"

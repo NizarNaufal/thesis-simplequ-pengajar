@@ -39,14 +39,16 @@
             app:layout_constraintTop_toBottomOf="@id/ivBack" />
         <TextView
             android:id="@+id/tvLoginDescription"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/str_description"
+            android:layout_marginEnd="@dimen/_10sdp"
             android:textColor="@color/black"
             android:textSize="15sp"
             android:layout_marginTop="10dp"
             android:fontFamily="@font/nunito_sans"
             android:layout_marginStart="23dp"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/tvLogin" />
 
@@ -67,33 +69,25 @@
             android:layout_marginTop="22dp"
             android:layout_marginEnd="24dp"
             android:layout_marginRight="24dp"
+            android:background="@drawable/bg_text_field"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
 
-            <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/tlEmail"
-                android:layout_width="match_parent"
+            <TextView
+                android:id="@+id/tvLoginku"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                app:hintEnabled="false"
-                app:startIconDrawable="@drawable/ic_phone"
-                app:layout_constraintTop_toTopOf="parent"
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/etEmail"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="Masukkan Email Atau Nomor Whatsapp"
-                    android:imeOptions="actionNext"
-                    android:inputType="textEmailAddress"
-                    android:selectAllOnFocus="false"
-                    android:clickable="false"
-                    android:textColor="@color/black"
-                    android:textColorHint="@color/colorDarkGray2"
-                    android:textSize="@dimen/text_size_small"
-                    android:textStyle="bold"
-                    android:theme="@style/TextInputLayoutAppearance" />
-            </com.google.android.material.textfield.TextInputLayout>
+                android:padding="@dimen/_10sdp"
+                android:drawableStart="@drawable/ic_phone"
+                android:gravity="center"
+                android:drawablePadding="@dimen/_10sdp"
+                android:text="Masukan Email atau Nomor Whatsapp"
+                android:textColor="@color/colorGreyScale60"
+                android:textSize="@dimen/_12ssp"
+                android:fontFamily="@font/nunito_sans"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
 
         </androidx.constraintlayout.widget.ConstraintLayout>
         <View

@@ -2,6 +2,7 @@ package com.example.thesis
 
 import android.content.Intent
 import android.os.Bundle
+import android.view.MenuItem
 import android.widget.EditText
 import com.basgeekball.awesomevalidation.AwesomeValidation
 import com.basgeekball.awesomevalidation.ValidationStyle
@@ -18,6 +19,10 @@ class ActivityCreatePassword : BaseActivity<ActivityCreatePasswordBinding>(Activ
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        setSupportActionBar(binding.toolbarVerification)
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+        supportActionBar?.setDisplayShowHomeEnabled(true)
+        supportActionBar?.setDisplayShowTitleEnabled(true)
         setupValidation()
 
         CustomTextWatcher().registerEditText(binding.etEmail).setCallBackOnTextChange(this)
@@ -73,5 +78,15 @@ class ActivityCreatePassword : BaseActivity<ActivityCreatePasswordBinding>(Activ
                 R.string.err_confirm_password)
         }
     }
-
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        return when(item.itemId){
+            android.R.id.home ->{
+                onBackPressed()
+                true
+            }
+            else ->{
+                super.onOptionsItemSelected(item)
+            }
+        }
+    }
 }

@@ -5,6 +5,7 @@ import android.content.Intent
 import android.graphics.Color
 import android.graphics.drawable.ColorDrawable
 import android.os.Bundle
+import android.view.MenuItem
 import android.view.Window
 import android.widget.TextView
 import com.example.thesis.common.BaseActivity
@@ -13,6 +14,10 @@ import com.example.thesis.databinding.ActivityAddSantriBinding
 class ActivityAddSantri: BaseActivity<ActivityAddSantriBinding>(ActivityAddSantriBinding::inflate){
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        setSupportActionBar(binding.toolbarVerification)
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+        supportActionBar?.setDisplayShowHomeEnabled(true)
+        supportActionBar?.setDisplayShowTitleEnabled(true)
         binding.btnVerifyConfirm.setOnClickListener {
             showDialog()
         }
@@ -34,4 +39,17 @@ class ActivityAddSantri: BaseActivity<ActivityAddSantriBinding>(ActivityAddSantr
         }
         dialog.show()
     }
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        return when(item.itemId){
+            android.R.id.home ->{
+                onBackPressed()
+                true
+            }
+            else ->{
+                super.onOptionsItemSelected(item)
+            }
+        }
+    }
+
+
 }

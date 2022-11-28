@@ -10,14 +10,19 @@ import android.text.Spanned
 import android.text.TextPaint
 import android.text.method.LinkMovementMethod
 import android.text.style.ClickableSpan
+import android.util.Patterns
+import android.view.MenuItem
 import android.view.View
 import android.view.Window
 import android.widget.EditText
 import android.widget.TextView
 import androidx.core.content.ContextCompat
+import com.basgeekball.awesomevalidation.AwesomeValidation
+import com.basgeekball.awesomevalidation.ValidationStyle
 import com.example.thesis.common.BaseActivity
 import com.example.thesis.databinding.ActivityRegisterBinding
 import com.example.thesis.utils.CustomTextWatcher
+import com.example.thesis.utils.DatumDummy
 import com.example.thesis.utils.TextWatcherTextChange
 
 class ActivityRegister : BaseActivity<ActivityRegisterBinding>(ActivityRegisterBinding::inflate),TextWatcherTextChange {
@@ -25,14 +30,22 @@ class ActivityRegister : BaseActivity<ActivityRegisterBinding>(ActivityRegisterB
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        setTermConditionText()
+        setSupportActionBar(binding.toolbarVerification)
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+        supportActionBar?.setDisplayShowHomeEnabled(true)
+        supportActionBar?.setDisplayShowTitleEnabled(true)
 
+        setTermConditionText()
         CustomTextWatcher().registerEditText(binding.etEmail).setCallBackOnTextChange(this)
         CustomTextWatcher().registerEditText(binding.etNoStatik).setCallBackOnTextChange(this)
         CustomTextWatcher().registerEditText(binding.etAddressLembaga).setCallBackOnTextChange(this)
         CustomTextWatcher().registerEditText(binding.etName).setCallBackOnTextChange(this)
         CustomTextWatcher().registerEditText(binding.etLembaga).setCallBackOnTextChange(this)
         CustomTextWatcher().registerEditText(binding.etNameKepalaLembaga).setCallBackOnTextChange(this)
+        val validation = AwesomeValidation(ValidationStyle.TEXT_INPUT_LAYOUT)
+        validation.setTextInputLayoutErrorTextAppearance(R.style.TextInputLayoutErrorStyle)
+        validation.addValidation(this, R.id.tlEmail, Patterns.EMAIL_ADDRESS, R.string.err_email)
+        validation.addValidation(this, R.id.tlPassword,DatumDummy.PASSWORD_PATTERN, R.string.err_password)
 
         if (binding.etNoStatik.text.toString() == "112349712912"){
             binding.btnCheckData.isEnabled = true
@@ -56,9 +69,11 @@ class ActivityRegister : BaseActivity<ActivityRegisterBinding>(ActivityRegisterB
         }
 
         binding.btnLogin.setOnClickListener {
-            Intent(this, ActivityOTP::class.java).apply {
-                putExtra("email",binding.etEmail.text.toString())
-                startActivity(this)
+            if(validation.validate()) {
+                Intent(this, ActivityOTP::class.java).apply {
+                    putExtra("email", binding.etEmail.text.toString())
+                    startActivity(this)
+                }
             }
         }
 
@@ -119,5 +134,16 @@ class ActivityRegister : BaseActivity<ActivityRegisterBinding>(ActivityRegisterB
 
     private fun validateForm(email: String, name: String,lembaga: String, address: String,nameKepalaLembaga: String, noStatik: String):Boolean{
         return email.isNotEmpty() && name.isNotEmpty() && lembaga.isNotEmpty() && address.isNotEmpty() && nameKepalaLembaga.isNotEmpty() && noStatik.isNotEmpty()
+    }
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        return when(item.itemId){
+            android.R.id.home ->{
+                onBackPressed()
+                true
+            }
+            else ->{
+                super.onOptionsItemSelected(item)
+            }
+        }
     }
 }

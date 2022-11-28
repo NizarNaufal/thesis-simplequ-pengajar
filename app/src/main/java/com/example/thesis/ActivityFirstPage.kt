@@ -18,7 +18,7 @@ class ActivityFirstPage : BaseActivity<ActivityFirstPageBinding>(ActivityFirstPa
                 startActivity(this)
             }
         }
-        binding.tlEmail.setOnClickListener {
+        binding.clEmail.setOnClickListener {
             Intent(this, ActivityLogin::class.java).apply {
                 startActivity(this)
             }

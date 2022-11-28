@@ -5,6 +5,7 @@ import android.content.Intent
 import android.graphics.Color
 import android.graphics.drawable.ColorDrawable
 import android.os.Bundle
+import android.view.MenuItem
 import android.view.View
 import android.view.Window
 import android.widget.Button
@@ -24,6 +25,10 @@ class ActivityDetailSantri : BaseActivity<ActivityDetailSantriBinding>(
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        setSupportActionBar(binding.toolbarVerification)
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+        supportActionBar?.setDisplayShowHomeEnabled(true)
+        supportActionBar?.setDisplayShowTitleEnabled(true)
         initTabLayout()
         fetchActivity()
         datumModel = intent.getParcelableExtra("data")!!
@@ -102,7 +107,7 @@ class ActivityDetailSantri : BaseActivity<ActivityDetailSantriBinding>(
         binding.includeProfil.root.visibility = View.VISIBLE
         binding.clChange.visibility = View.VISIBLE
         binding.btnChange.setOnClickListener {
-            Intent(this, ActivityEditPengajar::class.java).apply {
+            Intent(this, ActivityEditSantri::class.java).apply {
                 startActivity(this)
             }
         }
@@ -129,5 +134,16 @@ class ActivityDetailSantri : BaseActivity<ActivityDetailSantriBinding>(
             }
         }
         dialog.show()
+    }
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        return when(item.itemId){
+            android.R.id.home ->{
+                onBackPressed()
+                true
+            }
+            else ->{
+                super.onOptionsItemSelected(item)
+            }
+        }
     }
 }

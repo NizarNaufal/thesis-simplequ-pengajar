@@ -4,6 +4,7 @@ import com.example.thesis.utils.models.DatumModel
 
 object DatumDummy {
     const val PASSWORD_PATTERN = "^[@#&-+()/?!;:'\"*~`|•√π÷×¶∆£¢€¥^°={}\\%©®™✓[]><∆#.0-9a-zA-Z\\s,_-]+\$]{6,25}"
+    const val EMAIL_PATTERN = "[a-zA-Z0-9._-]+@[a-z]+\\.+[a-z]+"
 
     fun generateDataMovieDummy(): List<DatumModel> {
         val listMovie = ArrayList<DatumModel>()

@@ -3,6 +3,7 @@ package com.example.thesis
 import android.app.Activity
 import android.content.Intent
 import android.os.Bundle
+import android.view.MenuItem
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.thesis.common.BaseActivity
@@ -16,7 +17,10 @@ class ActivityListSantri : BaseActivity<ActivityPilihSantriBinding>(ActivityPili
     private lateinit var viewModel: HomeViewModel
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
+        setSupportActionBar(binding.toolbarVerification)
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+        supportActionBar?.setDisplayShowHomeEnabled(true)
+        supportActionBar?.setDisplayShowTitleEnabled(true)
         let {
             viewModel = ViewModelProvider(
                 it,
@@ -54,6 +58,17 @@ class ActivityListSantri : BaseActivity<ActivityPilihSantriBinding>(ActivityPili
         Intent(this, ActivityDetailSantri::class.java).apply {
             putExtra("data",data)
             startActivity(this)
+        }
+    }
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        return when(item.itemId){
+            android.R.id.home ->{
+                onBackPressed()
+                true
+            }
+            else ->{
+                super.onOptionsItemSelected(item)
+            }
         }
     }
 }
